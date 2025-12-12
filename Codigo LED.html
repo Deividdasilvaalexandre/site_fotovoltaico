@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Codigo.html">Código com Sete Segmentos</a>
+            <a href="Codigo LED.html">Código com LEDs</a>
+        </nav>
+    </header>
+    <main>
+        <pre>
+            // C++ code
+//
+int nivel = 0;
+
+void setup()
+{
+  pinMode(A5, INPUT);
+  Serial.begin(9600);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(0, OUTPUT);
+
+  nivel = analogRead(A5);
+}
+
+void loop()
+{
+  nivel = analogRead(A5);
+  Serial.println(nivel);
+  if (nivel >= 300 && nivel < 600) {
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(5, HIGH);
+  } else {
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+  }
+  if (nivel >= 600 && nivel < 900) {
+    digitalWrite(3, LOW);
+    digitalWrite(4, HIGH);
+    digitalWrite(0, LOW);
+  } else {
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+  }
+  if (nivel >= 900) {
+    digitalWrite(3, HIGH);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+  } else {
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+  }
+  delay(10); // Delay a little bit to improve simulation performance
+}
+        </pre>
+        <div class="foto-LED">
+            <img src="./img/print_LED.png" alt="Print do Programa em LEDs">
+        </div>
+        <div class="foto-grafico-led">
+            <img src="./img/print_grafico_arduino_ide_leds_potenciometro.png" alt="Foto do Gráfico no Arduíno com Leds e Potenciômetro">
+        </div>
+    </main>
+    <footer>
+        By Deivid &copy; &trade;
+    </footer>
+</body>
+</html>

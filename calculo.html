@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./calculo.js"defer></script>
+    <title>Cálculo</title>
+</head>
+<body>
+    <header>
+       <nav>
+           <a href="index.html">Principal</a>
+           <a href="Efeito Solar Fotovoltaico.html">ESF</a>
+           <a href="Placas Solares Intelbras.html">IntelBras</a>
+           <a href="Componentes do Sistema Fotovoltaico.html">Componentes</a>
+           <a href="Comparação entre Fabricantes.html">Comparação</a>
+           <a href="Radiação Solar em Tijucas (SC).html">Tijucas</a>
+           <a href="Comparação com as Melhores Regiões do Brasil.html">Regiões</a>
+           <a href="calculo.html">Cálculo</a>
+           <a href="Arduino.html">Arduíno</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Cálculo de energia solar produzida mensalmente</h1>
+        <label for="W">Digite a potência da sua placa solar</label><br>
+        <input type="text" id="W"><br>
+        
+        <label for="tempo">Digite a quantidade de tempo</label><br>
+        <input type="text" id="tempo"><br>
+        <br>
+        <button onclick="principal()">Calcular</button><br>
+        <div id="res"></div>
+    </main>
+    <footer>
+        By Deivid &copy; &trade;
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conceitos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Arduino.html">Arduíno</a>
+            <a href="Arduino Conceitos.html">Conceitos</a>
+        </nav>
+    </header>
+    <main>
+        <h1>O que são Saídas e Entradas Digitais?</h1>
+        <p>A Entrada e Saída Digital são;</p><br>
+        <hr>
+        <h2>Entrada Digital</h2>
+        <p>É onde o sinal recebido pelo Arduíno que só pode ser ligado ou desligado.</p><br>
+        <p>Em código Binário é dito como 0 ou 1, ligado ou desligado.</p><br>
+        <p>Físico é dito como pressionado ou não pressionado.</p><br>
+        <p>Em Volts é dito como 0 e 1</p><br>
+        <p>0 (LOW): Entre 0 e aproximadamente 1,5.</p><br>
+        <p>1 (HIGH): Entre 3 V e 5V.</p><br>
+        <hr>
+        <h3>Saída Digital</h3>
+        <p>O que é: sinal enviado pelo Arduíno com apenas dois estados.</p><br>
+        <p>Em código Binário é dito como 0 e 1.</p><br>
+        <p>Físico é dito pelo LED, apagado ou aceso.</p><br>
+        <p>Em Volts é dito como 0 e 5.</p><br>
+        <p>LOW: 0 V</p><br>
+        <p>HIGH: cerca de 5 V (Arduíno Uno)</p>
+        <hr>
+        <h4>O que são Saídas e Entradas Analógicas</h4>
+        <h5>Entrada Analógica</h5>
+        <p>É o sinal que pode ter infinitos valores entre o mínimo e o máximo.</p><br>
+        <p>Em código Binário o ADC converte para 0 a 1023 (10 bits no Arduíno Uno)</p><br>
+        <p>Físico é a intensidade de luz, posição de Potenciômetro, nível de água</p><br>
+        <p>Em Volts é dito como 0 a 5 V (Arduíno Uno)</p><br>
+        <h6>Saída Analógica</h6>
+        <p>No Arduíno Uno não existe saída analógica verdadeira, mas sim o PWM (Modulação por largura de pulso)</p><br>
+        <p>Em código Binário é dito pelo PWM, que desliga e liga rapidamente entre 0 e 1</p><br>
+        <p>Físico é dado pelo brilho variável do LED, velocidade variável do motor</p><br>
+        <p>Em Volts é calculado por pulsos de 0 a 5 V, mas com valor médio variável</p><br>
+        <hr>
+        <h7>Arduíno e Microcontrolador</h7><br><br>
+        <h8>O que é o Arduíno?</h8>
+        <p>O Arduíno é uma plataforma de prototipagem eletrônica composta por placa, microcontroladore e uma IDE para programação.</p><br>
+        <p>Também é usado em projetos de eletrônica, robótica e automação.</p><br>
+        <h9>O que é um Microcontrolador?</h9>
+        <p>O microcontrolador é um chip que funciona como um pequeno computador, contendo processador, memória e pinos de entrada/saída.</p><br>
+        <div class="foto-microcontrolador">
+            <img src="./img/microcontrolador.png" alt="Foto do Microcontrolador">
+        </div>
+        <p>Seu modelo é o ATmega328P, da fabricante Microchip (antiga Atmel)</p><br>
+        <hr>
+        <h10>Linguagem de programação do Arduíno</h10>
+        <p>Ele é baseado em C/C++, sendo programado no Arduíno IDE.</p><br>
+        <h11>Multímetro</h11>
+        <p>O multímetro é um instrumento usado para medir grandezas elétricas, sendo elas: Tensão, Corrente, Resistência, Continuidade, Diodo, com alguns modelos podendo medir temperatura, capacitância e frequência.</p><br>
+        <div class="foto-multimetro">
+            <img src="./img/multimetro.jpg" controls width="300" height="340" alt="Foto do Multímetro">
+        </div>
+        <h12>Escala de medição</h12>
+        <p>É a faixa máxima de valor que o multímetro pode medir em cada função.</p><br>
+        <p>A lei utilizada pelo multímetro é chamada de Lei de Ohm, que tem a seguinte fórmula: V = R × I</p><br>
+        <h13>Teste de Continuidade</h13>
+        <p>É a verificação para ver se existe ou não uma ligação elétrica entre dois pontos. Também serve para identificar cabos partidos, trilhas interrompidas e verificar se um circuito está fechado</p><br>
+        <h14>Como fazer as medições</h14>
+        <p>A medição de resistência em resistor deve-se colocar o multímetro na função ohmímetro (Ω).</p><br>
+        <p>O resistor deve estar fora do circuito.</p><br>
+        <p>Deve encostar nas pontas nos dois lados e por fim, ler o valor.</p><br>
+        <h15>Medição de tensão em circuito com resistor e LED</h15>
+        <p>Multímetro na função de tensão contínua (V).</p><br>
+        <p>Medir em paralelo com o componente.</p><br>
+        <p>Pode-se medir a tensão do LED, do resistor ou da fonte.</p><br>
+        <h16>Medição de corrente elétrica</h16>
+        <p>O multímetro deve ficar na função de corrente (A).</p><br>
+        <p>É necessário abrir o circuito, colocar o multímetro em série e, por fim, ler a corrente.</p><br>
+
+    </main>
+    <footer>
+        By Deivid &copy; &trade;
+    </footer>
+</body>
+</html>
